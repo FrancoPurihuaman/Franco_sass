@@ -1,9 +1,10 @@
 // Entrada de texto: ---------------------------------------------------------------------------------------------------------
-// .f_input-box--flat : Estilo para los elementos de entrada de texto (inputs, select, textarea)
-//                  Este estilo tambien puede ser agregado directamente a un formulrio o tabla
+// .f_input-box--flat : Estilo para los elementos de entrada de texto (inputs, select, textarea / tambien form o table)
+// .f_field : Estilo para etiqueta (label)
+// .f_field--required : Estilo de etiqueta requerido
 
 
-%style_input{
+%style_input {
 	font-family: inherit;
 	font-size: $fontsizemain;
     line-height: $lineheight;
@@ -41,47 +42,6 @@ table.f_input-box--flat select
 }
 
 
-// Input y select de ibreria Selectr (modificaciones)
-
-.selectr-container.f_input-box--flat,
-form.f_input-box--flat .selectr-container,
-table.f_input-box--flat .selectr-container{
-	.selectr-selected {
-		@extend %style_input;
-	}
-	
-	.selectr-options-container{
-		border: 1px solid $colorline;
-	}
-	
-	.selectr-input-container{
-		text-align: center;
-		
-		.selectr-input{
-			width: 94%;
-			margin: 3px auto;
-			border-color: $colorborderinput;
-		}
-	}
-	
-	
-	.selectr-option.active{
-		background-color: rgba($colortema, .9);
-	}
-}
-
-// Input de libreria select 2
-// 
-// .f_input-box--flat.select2-selection.select2-selection--single
-// {
-//     font-family: $fontmain;
-//     outline: none;
-//     margin: 0px;
-//     border-bottom: 1px solid $inputbordercolor;
-// }
-
-
-
 // Text area
 
 textarea.f_input-box--flat,
@@ -102,11 +62,7 @@ table.f_input-box--flat textarea
     }
 }
 
-
-
-// Etiqueta de cambo : --------------------------------------------------------------------------------------------------------
-// .f_field : Estilo para etiqueta (label)
-// .f_field--required : Estilo de etiqueta requerido
+// Label
 
 .f_field {
     font-weight: normal;
